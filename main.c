@@ -1,6 +1,9 @@
 #include <stdio.h>
 
 int main(){
-        printf("HEllo");
+        //Variables
+        //Start
+        //Process
+        //Output
     return 0;
 }
