@@ -165,7 +165,8 @@ void doMulti(){
             printf("TOTAL ATTEMPTS: %d\n", attempts);
         }
         }while(guess != randomNum);
-        //multi[layer] 
+
+        //multiplayer
         
     }
 }
