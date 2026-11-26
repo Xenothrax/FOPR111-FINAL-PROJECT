@@ -8,6 +8,7 @@ void difficulty();
 void doSingle();
 void doMulti();
 //start
+const char SEPERATOR[20]  = "====================";
 
 int main(){
 
@@ -24,8 +25,9 @@ int main(){
     printf("1. Singleplayer\n");
     printf("2. Multiplayer\n");
     printf("3. Quit\n");
+    printf("%s\n", SEPERATOR);
 
-    do{
+    while(isRunning){
         printf("Select (1-3): ");
         scanf("%d", &menuOpt);
 
@@ -45,7 +47,7 @@ int main(){
             isRunning = false;
         }
 
-    }while(isRunning);    
+    }    
 
     return 0;
 }   
