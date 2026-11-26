@@ -6,6 +6,7 @@
 
 void difficulty();
 void doGame();
+//start
 
 int main(){
 
