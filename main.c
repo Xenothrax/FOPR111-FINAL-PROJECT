@@ -12,6 +12,17 @@ int main(){
 =======
 #include <stdio.h>
 
+void doDiffulty(int difficultyOpt){
+    //while(1){
+            //int difficultyOpt;
+
+            printf("Difficulty \n");
+            printf("1. EASY | 2. MEDIUM | 3. HARD | 4. EXTREME\n");
+            printf("Select difficulty (1-4): ");
+            scanf("%d", &difficultyOpt);
+      //  }
+}
+
 int main(){
 
     //Variables
@@ -29,14 +40,7 @@ int main(){
 
     //Option 1
     if(menuOpt == 1 || menuOpt == 2){
-        while(1){
-            int difficultyOpt;
-
-            printf("Difficulty \n");
-            printf("1. EASY | 2. MEDIUM | 3. HARD | 4. EXTREME\n");
-            printf("Select difficulty (1-4): ");
-            scanf("%d", &difficultyOpt);
-        }
+        doDiffulty;
     }
     //Option 3
     else if(menuOpt == 3){
