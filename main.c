@@ -121,9 +121,9 @@ void doSingle(){
 void doMulti(){
     int players;
     char playerName[10][50];
-    int scores[] = {0};
+    int scores[6] = {0};
     
-    printf("Enter the Number of Players: ");
+    printf("Enter the Number of Players (2-6): ");
     scanf("%d", &players);
 
     for(int i = 0; i < players; i++){
@@ -131,8 +131,11 @@ void doMulti(){
         scanf("%s", &playerName[i]);
     }
 
+    int max;
+    int randomNum;
+    int guess;
+    int attempts = 0;
     
-
-    
+    difficulty(&max, &randomNum);
 
 }
