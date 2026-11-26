@@ -161,7 +161,8 @@ void doMulti(){
             printf("THE NUMBER WAS: %d\n", randomNum);
             printf("TOTAL ATTEMPTS: %d\n", attempts);
         }
-        }while(guess != randomNum); 
+        }while(guess != randomNum);
+        //multi[layer] 
         
     }
 }
