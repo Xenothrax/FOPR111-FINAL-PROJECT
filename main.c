@@ -95,9 +95,9 @@ void doGame(){
     int attempts = 0;
     
     difficulty(&max, &randomNum);
-    
+    printf("Guess a Number between 1 - %d\n ", max);
     while(guess != randomNum){
-        printf("Guess a Number between 1 - %d\n ", max);
+        
         printf("Enter your Guess: ");
         scanf("%d", &guess);
         
