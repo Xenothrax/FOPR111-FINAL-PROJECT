@@ -3,9 +3,9 @@
 #include <time.h>
 #include <stdlib.h>
 
-//testing
 void difficulty();
-void doGame();
+void doSingle();
+void doMulti();
 //start
 
 int main(){
@@ -30,11 +30,11 @@ int main(){
 
         if(menuOpt == 1){
             //difficulty();
-            doGame();
+            doSingle();
             
         }
         else if(menuOpt == 2){
-
+            doMulti();
         }
         else if(menuOpt == 3){
             for(int i = 3; i > 0; i--){
@@ -87,7 +87,7 @@ void difficulty(int *max, int *randomNum){
     //printf("Guess a Number betweem %d - %d\n", min ,max);
 
 }
-void doGame(){
+void doSingle(){
     
     int max;
     int randomNum;
@@ -116,4 +116,23 @@ void doGame(){
         }
         
     }
+}
+
+void doMulti(){
+    int players;
+    char playerName[10][50];
+    int scores[] = {0};
+    
+    printf("Enter the Number of Players: ");
+    scanf("%d", &players);
+
+    for(int i = 0; i < players; i++){
+        printf("Enter name of Player %d: ", i + 1);
+        scanf("%s", &playerName[i]);
+    }
+
+    
+
+    
+
 }
