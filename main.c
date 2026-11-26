@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-#include <stdio.h>
-
-int main(){
-        //Variables
-        //Start
-        //Menu
-        printf("Menu\n");
-        //Process
-        //Output
-    return 0;
-=======
 #include <stdio.h>
 
 void doDiffulty(int difficultyOpt){
