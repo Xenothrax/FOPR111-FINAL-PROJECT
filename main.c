@@ -3,6 +3,7 @@
 #include <time.h>
 #include <stdlib.h>
 
+//testing
 void difficulty();
 void doSingle();
 void doMulti();
