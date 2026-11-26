@@ -3,10 +3,7 @@
 #include <time.h>
 #include <stdlib.h>
 
-<<<<<<< HEAD
-//testing purpose
-=======
->>>>>>> b6dc19d0d9c2cc922e95de40766c4605e6812474
+//testing
 void difficulty();
 void doGame();
 //start
