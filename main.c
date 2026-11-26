@@ -122,20 +122,46 @@ void doMulti(){
     int players;
     char playerName[10][50];
     int scores[6] = {0};
+    int max;
+    int randomNum;
     
     printf("Enter the Number of Players (2-6): ");
     scanf("%d", &players);
 
+    //Players Names
     for(int i = 0; i < players; i++){
         printf("Enter name of Player %d: ", i + 1);
         scanf("%s", &playerName[i]);
     }
 
-    int max;
-    int randomNum;
-    int guess;
-    int attempts = 0;
     
     difficulty(&max, &randomNum);
+    for(int i = 0; i < players; i++){
+       
+        int guess;
+        int attempts = 0;
 
+        printf("Guess a Number between 1 - %d\n ", max);
+        do{
+        printf("%s's Turns\n", playerName[i]);
+
+        printf("Enter your Guess: ");
+        scanf("%d", &guess);
+        
+        if(guess < randomNum){
+            printf("TOO LOW! TRY AGAIN\n");
+            attempts++;
+        }
+        else if(guess > randomNum){
+            printf("TOO HIGH! TRY AGAIN\n");
+            attempts++;
+        }
+        if(guess == randomNum){
+            printf("YOU GOT IT!\n");
+            printf("THE NUMBER WAS: %d\n", randomNum);
+            printf("TOTAL ATTEMPTS: %d\n", attempts);
+        }
+        }while(guess != randomNum); 
+        
+    }
 }
