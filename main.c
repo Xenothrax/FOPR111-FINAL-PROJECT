@@ -4,6 +4,7 @@
 #include <stdlib.h>
 
 //testing purposes
+//tes
 void difficulty();
 void doGame();
 //start
