@@ -3,8 +3,11 @@
 #include <time.h>
 #include <stdlib.h>
 
+<<<<<<< HEAD
 //testing purposes
 //tes
+=======
+>>>>>>> e25d9e22a07e43d51fc7bc9aff1d38b471bae5f0
 void difficulty();
 void doGame();
 //start
